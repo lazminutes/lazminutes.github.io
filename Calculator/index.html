@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="judul">FGA DTS 2022 - Lazarus</div>
+      <div class="baris-pertama">
+        <input type="text" name="hasil" class="hasil" id="hasil" value="" placeholder="Result" readonly>
+      </div>
+      <div class="baris-kedua">
+        <input type="button" value="C" onclick="hapusLayar()" id="hapus">
+        <input type="button" value="%" onclick="hasil.value = eval(hasil.value/100)" id="persen">
+        <input type="button" value="+" onclick="tampilLayar('+')" id="tambah">
+      </div>
+      <div class="baris-ketiga">
+        <input type="button" value="7" onclick="tampilLayar(7)" id="tujuh">
+        <input type="button" value="8" onclick="tampilLayar(8)" id="delapan">
+        <input type="button" value="9" onclick="tampilLayar(9)" id="sembilan">
+        <input type="button" value="-" onclick="tampilLayar('-')" id="kurang">
+      </div>
+      <div class="baris-keempat">
+        <input type="button" value="4" onclick="tampilLayar(4)" id="empat">
+        <input type="button" value="5" onclick="tampilLayar(5)" id="lima">
+        <input type="button" value="6" onclick="tampilLayar(6)" id="enam">
+        <input type="button" value="/" onclick="tampilLayar('/')" id="bagi">
+      </div>
+      <div class="baris-kelima">
+        <input type="button" value="1" onclick="tampilLayar(1)" id="satu">
+        <input type="button" value="2" onclick="tampilLayar(2)" id="dua">
+        <input type="button" value="3" onclick="tampilLayar(3)" id="tiga">
+        <input type="button" value="x" onclick="tampilLayar('*')"  id="kali">
+      </div>
+      <div class="baris-keenam">
+        <input type="button" value="0" onclick="tampilLayar(0)" id="nol">
+        <input type="button" value="." class="koma" onclick="tampilLayar('.')" id="koma">
+        <input type="button" value="=" onclick="hasil.value = eval(hasil.value||null)" id="sama-dengan">
+      </div>
+      <div class="mentor">
+        <a href="https://github.com/aldamr01">Shout out to my super mentor<span> mas Aldion</span>🤩</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
